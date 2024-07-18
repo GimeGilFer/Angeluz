@@ -446,6 +446,11 @@ img{
 }
 
 /* footer */
+
+.footer-credit {
+    text-align: center;
+}
+
 .footer{
     background: var(--dark);
     color: #fff;
