@@ -260,61 +260,72 @@
     </div>
 </article>
 <!-- end of Google Maps Placeholder -->
-<!-- Nuevas imágenes -->
 <section class="room-images sec-width">
-    <div class="image-row">
-        <div class="image-container">
+    <style>
+        .room-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .image-container {
+            flex: 0 0 calc(50% - 10px);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .room-image img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #000;
+            transition: transform 0.3s ease;
+        }
+
+        .room-image img:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .image-container {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+
+    <div class="image-container">
+        <div class="room-image">
             <img src="images/portada-04.jpg" alt="Portada 4" class="responsive-image">
         </div>
-        <div class="image-container">
+    </div>
+    <div class="image-container">
+        <div class="room-image">
             <img src="images/portada-05.jpg" alt="Portada 5" class="responsive-image">
         </div>
     </div>
-    <div class="image-row">
-        <div class="image-container">
+    <div class="image-container">
+        <div class="room-image">
             <img src="images/portada-06.jpg" alt="Portada 6" class="responsive-image">
         </div>
-        <div class="image-container">
+    </div>
+    <div class="image-container">
+        <div class="room-image">
             <img src="images/portada-07.jpg" alt="Portada 7" class="responsive-image">
         </div>
     </div>
-    <div class="image-row">
-        <div class="image-container">
+    <div class="image-container">
+        <div class="room-image">
             <img src="images/portada-08.jpg" alt="Portada 8" class="responsive-image">
         </div>
-        <div class="image-container">
+    </div>
+    <div class="image-container">
+        <div class="room-image">
             <img src="images/portada-09.jpg" alt="Portada 9" class="responsive-image">
         </div>
     </div>
 </section>
 
-<!-- ... resto del código ... -->
 
-<style>
-    .image-row {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
-    }
-
-    .image-container {
-        flex: 1;
-        margin: 0 5px;
-    }
-
-    .responsive-image {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    @media (max-width: 768px) {
-        .image-row {
-            flex-direction: column;
-        }
-    }
-</style>
             </div>
         </section>
 
